@@ -1,0 +1,27 @@
+# CIORP: Causal Inference Operation Risk Predictor for CABG Surgery
+
+## Overview
+This repository contains the implementation of the Causal Inference Operation Risk Predictor (CIORP) for predicting postoperative complications in patients undergoing Coronary Artery Bypass Grafting (CABG). The model utilizes a Structural Causal Model (SCM) combined with backdoor adjustment techniques to accurately identify and mitigate the impact of confounding factors, even with limited data.
+
+## Methodology
+The CIORP model integrates several advanced techniques:
+- **Structural Causal Model (SCM)**: Maps causal relationships among preoperative, intraoperative, and postoperative factors.
+- **Backdoor Adjustment**: Removes non-causal paths, focusing on genuine causal relationships.
+- **Graph Convolutional Networks (GCN)**: Processes preoperative patient data by constructing a graph of patient and disease nodes.
+- **LSTM**: Extracts temporal features from operation-related data.
+- **Attention Mechanism**: Separates causal from non-causal features using a multi-head attention mechanism.
+- **Few-shot Learning**: Enhances model performance with limited data through pre-training and fine-tuning.
+
+## Installation
+
+### Prerequisites
+- **Python**: 3.7.16
+- **PyTorch**: 1.13.1
+- **scikit-learn**: 1.0.2
+- **SciPy**: 1.7.3
+
+### Setup
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/YourUsername/CIORP.git
+   cd CIORP
